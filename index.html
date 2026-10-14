@@ -1,1 +1,3011 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><link rel="shortcut icon" href="/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/manifest.json"><title>React App</title><link href="/static/css/main.a364a507.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={2:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/1.b8ffcd62.chunk.js"></script><script src="/static/js/main.c3a33955.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahul Raj — Principal Engineer | Distributed Systems, Cloud Architecture, AI & Application Security</title>
+  <meta name="description" content="Interactive engineering portfolio of Rahul Raj — Principal Member of Technical Staff at Oracle Health Data Intelligence. 12+ years in Distributed Systems, Cloud Architecture (AWS/OCI), Application Security & Agentic AI Workflows." />
+  <style>
+    :root {
+      --bg-primary: #070b14;
+      --bg-secondary: #0d1322;
+      --bg-card: rgba(16, 24, 43, 0.75);
+      --bg-card-hover: rgba(24, 35, 62, 0.9);
+      --bg-glass: rgba(13, 19, 34, 0.8);
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --accent-cyan: #06b6d4;
+      --accent-cyan-glow: rgba(6, 182, 212, 0.25);
+      --accent-indigo: #6366f1;
+      --accent-indigo-glow: rgba(99, 102, 241, 0.25);
+      --accent-emerald: #10b981;
+      --accent-emerald-glow: rgba(16, 185, 129, 0.22);
+      --accent-amber: #f59e0b;
+      --accent-rose: #f43f5e;
+      --border-subtle: rgba(148, 163, 184, 0.14);
+      --border-highlight: rgba(6, 182, 212, 0.45);
+      --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.55);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      --font-mono: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
+      --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #f1f5f9;
+      --bg-card: rgba(255, 255, 255, 0.9);
+      --bg-card-hover: rgba(255, 255, 255, 0.99);
+      --bg-glass: rgba(248, 250, 252, 0.88);
+      --text-primary: #0f172a;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --accent-cyan: #0284c7;
+      --accent-cyan-glow: rgba(2, 132, 199, 0.15);
+      --accent-indigo: #4f46e5;
+      --accent-indigo-glow: rgba(79, 70, 229, 0.15);
+      --accent-emerald: #059669;
+      --accent-emerald-glow: rgba(5, 150, 105, 0.15);
+      --accent-amber: #d97706;
+      --accent-rose: #e11d48;
+      --border-subtle: rgba(15, 23, 42, 0.1);
+      --border-highlight: rgba(2, 132, 199, 0.45);
+      --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 84px;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background-color 0.35s ease, color 0.35s ease;
+    }
+
+    /* Hide Printable Resume on Screen */
+    #printable-resume {
+      display: none;
+    }
+
+    /* Background Interactive Canvas & Ambient Glows */
+    #network-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.55;
+    }
+
+    .ambient-glow {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(110px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.35;
+    }
+    .glow-1 {
+      width: 520px;
+      height: 520px;
+      background: radial-gradient(circle, var(--accent-cyan), transparent 70%);
+      top: -120px;
+      right: -100px;
+    }
+    .glow-2 {
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--accent-indigo), transparent 70%);
+      bottom: -200px;
+      left: -160px;
+    }
+
+    /* Scroll Progress Bar */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-indigo), var(--accent-emerald));
+      width: 0%;
+      z-index: 1001;
+      transition: width 0.08s linear;
+    }
+
+    /* Sticky Glass Navigation */
+    header.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 72px;
+      background: var(--bg-glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 clamp(1.25rem, 4vw, 3.5rem);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-monogram {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-indigo));
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-family: var(--font-mono);
+      font-weight: 800;
+      font-size: 0.95rem;
+      box-shadow: 0 4px 16px var(--accent-cyan-glow);
+    }
+
+    .brand-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.72rem;
+      font-family: var(--font-mono);
+      color: var(--accent-emerald);
+      background: var(--accent-emerald-glow);
+      padding: 0.18rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      margin-left: 0.4rem;
+    }
+
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent-emerald);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.55; }
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-size: 0.86rem;
+      font-weight: 500;
+      padding: 0.45rem 0.8rem;
+      border-radius: var(--radius-sm);
+      transition: var(--transition-fast);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--text-primary);
+      background: rgba(148, 163, 184, 0.1);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .btn-cmd {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+      padding: 0.42rem 0.75rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      font-family: var(--font-mono);
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+    .btn-cmd:hover {
+      border-color: var(--accent-cyan);
+      color: var(--text-primary);
+    }
+    .kbd {
+      background: rgba(148, 163, 184, 0.15);
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.72rem;
+    }
+
+    .btn-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+    .btn-icon:hover {
+      border-color: var(--accent-cyan);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-indigo));
+      color: #ffffff;
+      border: none;
+      padding: 0.68rem 1.3rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.88rem;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 8px 22px var(--accent-cyan-glow);
+      transition: var(--transition-fast);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px var(--accent-indigo-glow);
+    }
+    .btn-primary:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--bg-card);
+      color: var(--text-primary);
+      border: 1px solid var(--border-subtle);
+      padding: 0.68rem 1.3rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.88rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+    .btn-secondary:hover {
+      border-color: var(--accent-cyan);
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Main Container */
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 104px clamp(1.25rem, 4vw, 2.5rem) 4rem;
+    }
+
+    section {
+      margin-bottom: 5.5rem;
+    }
+
+    .section-header {
+      margin-bottom: 2.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .section-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-cyan);
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .section-eyebrow::before {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 2px;
+      background: var(--accent-cyan);
+    }
+
+    .section-title {
+      font-size: clamp(1.65rem, 3vw, 2.25rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+    }
+
+    .section-subtitle {
+      color: var(--text-secondary);
+      font-size: 0.96rem;
+      max-width: 620px;
+    }
+
+    /* Hero Section */
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2.25rem;
+      align-items: stretch;
+      margin-bottom: 2.25rem;
+    }
+
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-pill-bar {
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.15rem;
+    }
+
+    .hero-badge {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(6, 182, 212, 0.12);
+      border: 1px solid rgba(6, 182, 212, 0.35);
+      color: var(--accent-cyan);
+      font-weight: 600;
+    }
+
+    .hero-location {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.25rem, 4.2vw, 3.45rem);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.08;
+      margin-bottom: 0.75rem;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--accent-cyan) 0%, #818cf8 55%, var(--accent-emerald) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-role-rotator {
+      font-family: var(--font-mono);
+      font-size: clamp(1rem, 1.8vw, 1.22rem);
+      color: var(--text-primary);
+      margin-bottom: 1.15rem;
+      min-height: 1.8em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .cursor-blink {
+      display: inline-block;
+      width: 9px;
+      height: 1.15em;
+      background: var(--accent-cyan);
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    .hero-bio {
+      color: var(--text-secondary);
+      font-size: 0.98rem;
+      line-height: 1.68;
+      margin-bottom: 1.65rem;
+      max-width: 650px;
+    }
+
+    .hero-bio strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.15rem;
+      padding-top: 1.1rem;
+      border-top: 1px solid var(--border-subtle);
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+    }
+
+    .hero-quick-links a,
+    .hero-quick-links button {
+      color: var(--text-secondary);
+      text-decoration: none;
+      background: none;
+      border: none;
+      font: inherit;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: var(--transition-fast);
+    }
+    .hero-quick-links a:hover,
+    .hero-quick-links button:hover {
+      color: var(--accent-cyan);
+    }
+
+    /* Interactive Agentic Terminal in Hero */
+    .terminal-card {
+      background: #060911;
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      height: 100%;
+      min-height: 410px;
+    }
+
+    .terminal-header {
+      background: #0d1323;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+    }
+
+    .terminal-dots {
+      display: flex;
+      gap: 6px;
+    }
+    .terminal-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+    }
+    .dot-red { background: #ef4444; }
+    .dot-yellow { background: #f59e0b; }
+    .dot-green { background: #10b981; }
+
+    .terminal-title {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: #94a3b8;
+    }
+
+    .terminal-body {
+      padding: 1.1rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: #e2e8f0;
+      flex: 1;
+      overflow-y: auto;
+      line-height: 1.65;
+    }
+
+    .term-cmd-bar {
+      padding: 0.7rem 0.9rem;
+      background: #0b101e;
+      border-top: 1px solid rgba(148, 163, 184, 0.14);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .term-chip {
+      font-family: var(--font-mono);
+      font-size: 0.71rem;
+      background: rgba(6, 182, 212, 0.12);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      padding: 0.28rem 0.6rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+    .term-chip:hover,
+    .term-chip.active {
+      background: rgba(6, 182, 212, 0.28);
+      border-color: #38bdf8;
+      color: #fff;
+    }
+
+    .t-prompt { color: #10b981; font-weight: 700; }
+    .t-cmd { color: #38bdf8; }
+    .t-key { color: #a78bfa; }
+    .t-val { color: #34d399; font-weight: 600; }
+    .t-muted { color: #64748b; }
+
+    /* KPI Bento Strip */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.15rem;
+    }
+
+    .kpi-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.35rem;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition-smooth);
+    }
+
+    .kpi-card:hover {
+      border-color: var(--border-highlight);
+      transform: translateY(-4px);
+      background: var(--bg-card-hover);
+    }
+
+    .kpi-card::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-indigo));
+      opacity: 0.75;
+    }
+
+    .kpi-metric {
+      font-size: clamp(1.9rem, 3vw, 2.5rem);
+      font-weight: 800;
+      font-family: var(--font-mono);
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
+      display: flex;
+      align-items: baseline;
+      gap: 0.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .kpi-unit {
+      font-size: 1.15rem;
+      color: var(--accent-cyan);
+    }
+
+    .kpi-label {
+      font-weight: 700;
+      font-size: 0.92rem;
+      margin-bottom: 0.35rem;
+      color: var(--text-primary);
+    }
+
+    .kpi-desc {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.45;
+    }
+
+    .kpi-tag {
+      display: inline-block;
+      margin-top: 0.65rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      background: rgba(99, 102, 241, 0.14);
+      color: #818cf8;
+    }
+
+    /* Interactive Architecture Blueprint Explorer */
+    .arch-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .arch-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 1rem;
+    }
+
+    .arch-tab {
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+      padding: 0.6rem 1.05rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.84rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .arch-tab:hover {
+      color: var(--text-primary);
+      border-color: var(--accent-cyan);
+    }
+
+    .arch-tab.active {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(99, 102, 241, 0.2));
+      color: var(--text-primary);
+      border-color: var(--accent-cyan);
+      box-shadow: 0 4px 15px var(--accent-cyan-glow);
+    }
+
+    .arch-layout {
+      display: grid;
+      grid-template-columns: 1.35fr 0.65fr;
+      gap: 1.5rem;
+      align-items: stretch;
+    }
+
+    .arch-diagram-stage {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 330px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .arch-nodes-flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.85rem;
+      align-items: center;
+      margin: auto 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .arch-node {
+      background: var(--bg-card);
+      border: 1.5px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1rem 0.8rem;
+      text-align: center;
+      cursor: pointer;
+      transition: var(--transition-fast);
+      position: relative;
+    }
+
+    .arch-node:hover,
+    .arch-node.selected {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 22px var(--accent-cyan-glow);
+      transform: translateY(-3px);
+    }
+
+    .arch-node-step {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      color: var(--accent-cyan);
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+
+    .arch-node-title {
+      font-weight: 700;
+      font-size: 0.86rem;
+      margin-bottom: 0.25rem;
+      color: var(--text-primary);
+    }
+
+    .arch-node-tech {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-secondary);
+    }
+
+    .arch-flow-Packet {
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--accent-cyan), var(--accent-emerald), transparent);
+      background-size: 200% 100%;
+      animation: flowStream 2.6s linear infinite;
+      border-radius: 999px;
+      margin: 1rem 0 0.4rem;
+    }
+
+    @keyframes flowStream {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    .arch-inspector {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.35rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .inspector-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent-emerald);
+      background: var(--accent-emerald-glow);
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.6rem;
+    }
+
+    .inspector-title {
+      font-size: 1.12rem;
+      font-weight: 700;
+      margin-bottom: 0.55rem;
+    }
+
+    .inspector-desc {
+      font-size: 0.87rem;
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .inspector-metrics {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 0.85rem;
+      font-size: 0.82rem;
+    }
+
+    /* Executive Insights & Interactive Impact Simulator */
+    .insights-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 1.5rem;
+    }
+
+    .simulator-card,
+    .radar-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.65rem;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .sim-control {
+      margin-bottom: 1.15rem;
+    }
+
+    .sim-label-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .sim-val {
+      font-family: var(--font-mono);
+      color: var(--accent-cyan);
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--accent-cyan);
+      cursor: pointer;
+      height: 6px;
+      border-radius: 999px;
+    }
+
+    .sim-outputs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-top: 1.35rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .sim-out-box {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem;
+      text-align: center;
+    }
+
+    .sim-out-num {
+      font-family: var(--font-mono);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--accent-emerald);
+    }
+
+    .sim-out-lbl {
+      font-size: 0.74rem;
+      color: var(--text-secondary);
+      margin-top: 0.2rem;
+    }
+
+    /* Interactive Career Timeline */
+    .timeline-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .filter-btn {
+      background: var(--bg-card);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--accent-cyan);
+      color: #fff;
+      border-color: var(--accent-cyan);
+    }
+
+    .timeline-list {
+      position: relative;
+      padding-left: 2rem;
+      border-left: 2px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .timeline-item {
+      position: relative;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      transition: var(--transition-smooth);
+    }
+
+    .timeline-item:hover {
+      border-color: var(--border-highlight);
+      background: var(--bg-card-hover);
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -2.42rem;
+      top: 1.65rem;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--accent-cyan);
+      border: 3px solid var(--bg-primary);
+      box-shadow: 0 0 12px var(--accent-cyan);
+    }
+
+    .timeline-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .role-title {
+      font-size: 1.18rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+
+    .role-company {
+      font-size: 0.95rem;
+      color: var(--accent-cyan);
+      font-weight: 600;
+    }
+
+    .role-period {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      background: var(--bg-secondary);
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .role-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .role-bullets li {
+      position: relative;
+      padding-left: 1.2rem;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .role-bullets li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--accent-cyan);
+      font-weight: bold;
+    }
+
+    .role-bullets li strong {
+      color: var(--text-primary);
+    }
+
+    .tech-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .tech-pill {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      padding: 0.22rem 0.6rem;
+      border-radius: 6px;
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .tech-pill:hover,
+    .tech-pill.highlighted {
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+      background: rgba(6, 182, 212, 0.12);
+    }
+
+    /* Interactive Skill Ecosystem Matrix */
+    .skills-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .skill-search-input {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      padding: 0.65rem 1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.88rem;
+      min-width: 260px;
+      outline: none;
+      font-family: var(--font-sans);
+      transition: var(--transition-fast);
+    }
+    .skill-search-input:focus {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 0 3px var(--accent-cyan-glow);
+    }
+
+    .skills-categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.15rem;
+    }
+
+    .skill-cat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.35rem;
+      transition: var(--transition-fast);
+    }
+
+    .skill-cat-card:hover {
+      border-color: var(--border-highlight);
+    }
+
+    .skill-cat-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.9rem;
+    }
+
+    .skill-cat-name {
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--text-primary);
+    }
+
+    .skill-cat-count {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--accent-cyan);
+      background: rgba(6, 182, 212, 0.12);
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+    }
+
+    /* Education & Credentials Banner */
+    .edu-banner {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(99, 102, 241, 0.1));
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.65rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+
+    /* PRIVACY-FIRST GOOGLE FORM & GOOGLE SHEET CONTACT HUB */
+    .contact-hub-layout {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 1.75rem;
+      align-items: stretch;
+    }
+
+    .contact-form-card,
+    .contact-info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-form-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-indigo), var(--accent-emerald));
+    }
+
+    .topic-pills-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0.55rem 0 1.25rem;
+    }
+
+    .topic-pill {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.42rem 0.85rem;
+      border-radius: 999px;
+      background: var(--bg-secondary);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-subtle);
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .topic-pill:hover {
+      border-color: var(--accent-cyan);
+      color: var(--text-primary);
+    }
+
+    .topic-pill.active {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.22), rgba(99, 102, 241, 0.22));
+      color: var(--accent-cyan);
+      border-color: var(--accent-cyan);
+      box-shadow: 0 4px 12px var(--accent-cyan-glow);
+    }
+
+    .form-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.38rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .form-label .req {
+      color: var(--accent-cyan);
+      font-family: var(--font-mono);
+    }
+
+    .form-input,
+    .form-textarea {
+      width: 100%;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      padding: 0.72rem 0.95rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      font-family: var(--font-sans);
+      outline: none;
+      transition: var(--transition-fast);
+    }
+
+    .form-input:focus,
+    .form-textarea:focus {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 0 3px var(--accent-cyan-glow);
+    }
+
+    .form-textarea {
+      min-height: 120px;
+      resize: vertical;
+      line-height: 1.55;
+    }
+
+    .quick-template-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .tpl-chip {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 5px;
+      background: rgba(99, 102, 241, 0.12);
+      color: #818cf8;
+      border: 1px solid rgba(99, 102, 241, 0.28);
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+    .tpl-chip:hover {
+      background: rgba(99, 102, 241, 0.25);
+      color: #fff;
+    }
+
+    .submission-banner {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem 1.15rem;
+      border-radius: var(--radius-sm);
+      background: rgba(16, 185, 129, 0.14);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: var(--text-primary);
+      font-size: 0.86rem;
+    }
+    .submission-banner.show {
+      display: block;
+    }
+
+    .privacy-shield-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-family: var(--font-mono);
+      font-size: 0.73rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--accent-emerald);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      margin-bottom: 0.85rem;
+    }
+
+    /* Command Palette Modal */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 7, 18, 0.78);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+    }
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-highlight);
+      border-radius: var(--radius-lg);
+      max-width: 640px;
+      width: 100%;
+      padding: 1.75rem;
+      box-shadow: var(--shadow-lg);
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .cmd-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-top: 0.85rem;
+    }
+
+    .cmd-item {
+      padding: 0.65rem 0.9rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-size: 0.88rem;
+      transition: var(--transition-fast);
+    }
+    .cmd-item:hover {
+      border-color: var(--accent-cyan);
+      background: var(--bg-card-hover);
+    }
+
+    /* Toast Notification */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--accent-emerald);
+      color: #fff;
+      padding: 0.7rem 1.2rem;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.85rem;
+      box-shadow: var(--shadow-lg);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: var(--transition-smooth);
+      z-index: 3000;
+    }
+    #toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 2rem clamp(1.25rem, 4vw, 3.5rem);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.84rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .arch-layout,
+      .insights-grid,
+      .contact-hub-layout {
+        grid-template-columns: 1fr;
+      }
+      .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .arch-nodes-flow {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .kpi-grid,
+      .sim-outputs,
+      .arch-nodes-flow,
+      .form-grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ==========================================================================
+       DEDICATED EXECUTIVE PRINTABLE RESUME STYLESHEET (@media print)
+       Engineered for zero bottom-page gaps and balanced 2-page A4 flow:
+       - Leaf-only break avoidance (on `li` and `.pr-role-top`, NEVER on `.pr-role`)
+       - `break-after: avoid` on section & role headers so headings never orphan
+       ========================================================================== */
+    @page {
+      size: A4 portrait;
+      margin: 9.5mm 13mm;
+    }
+
+    @media print {
+      html, body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 9pt;
+        line-height: 1.36;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      /* Hide interactive web app chrome when printing */
+      header.navbar,
+      .scroll-progress,
+      #network-canvas,
+      .ambient-glow,
+      main#top,
+      footer,
+      .modal-backdrop,
+      #toast,
+      #hidden_gform_iframe {
+        display: none !important;
+      }
+
+      /* Show dedicated Printable Executive Resume */
+      #printable-resume {
+        display: block !important;
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        color: #1e293b;
+      }
+
+      .pr-header {
+        text-align: center;
+        border-bottom: 1.8px solid #0f172a;
+        padding-bottom: 5.5pt;
+        margin-bottom: 6.5pt;
+      }
+
+      .pr-name {
+        font-family: 'Georgia', 'Times New Roman', serif;
+        font-size: 20pt;
+        font-weight: 800;
+        color: #0f172a;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        margin-bottom: 2pt;
+      }
+
+      .pr-headline {
+        font-family: 'Georgia', 'Times New Roman', serif;
+        font-style: italic;
+        font-size: 9.5pt;
+        color: #0369a1;
+        font-weight: 600;
+        margin-bottom: 2.5pt;
+      }
+
+      .pr-contact-bar {
+        font-size: 8.4pt;
+        color: #334155;
+      }
+
+      .pr-section {
+        margin-bottom: 6.5pt;
+      }
+
+      .pr-section-title {
+        font-size: 9.4pt;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #0f172a;
+        border-bottom: 1.2px solid #94a3b8;
+        padding-bottom: 1.5pt;
+        margin-bottom: 4pt;
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+
+      .pr-summary {
+        font-size: 8.9pt;
+        color: #1e293b;
+        text-align: justify;
+      }
+
+      .pr-list {
+        list-style-type: disc;
+        padding-left: 13pt;
+        margin: 0;
+      }
+
+      .pr-list li {
+        margin-bottom: 1.8pt;
+        font-size: 8.85pt;
+        color: #1e293b;
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      .pr-tech-grid {
+        display: grid;
+        grid-template-columns: 126pt 1fr;
+        row-gap: 1.8pt;
+        column-gap: 6pt;
+        font-size: 8.75pt;
+        padding: 1.5pt 0;
+      }
+
+      .pr-tech-cat {
+        font-weight: 700;
+        color: #0f172a;
+      }
+
+      .pr-tech-items {
+        color: #1e293b;
+      }
+
+      /* IMPORTANT: Do NOT set break-inside: avoid on .pr-role container!
+         Allow roles to flow naturally across page boundaries while keeping
+         role headers attached to their first bullet via break-after: avoid. */
+      .pr-role {
+        margin-bottom: 6.5pt;
+      }
+
+      .pr-role-top {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+
+      .pr-role-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 0.5pt;
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+
+      .pr-role-title {
+        font-size: 9.5pt;
+        font-weight: 700;
+        color: #0f172a;
+      }
+
+      .pr-role-date {
+        font-size: 8.4pt;
+        font-style: italic;
+        font-weight: 600;
+        color: #334155;
+      }
+
+      .pr-role-org {
+        font-size: 8.8pt;
+        font-style: italic;
+        font-weight: 600;
+        color: #0369a1;
+        margin-bottom: 2pt;
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <canvas id="network-canvas"></canvas>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Hidden iframe target for zero-CORS native Google Forms POST fallback -->
+  <iframe name="hidden_gform_iframe" id="hidden_gform_iframe" style="display:none;" title="Google Form Submission Target"></iframe>
+
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <a href="#top" class="brand">
+      <div class="brand-monogram">RR</div>
+      <div>
+        <span>Rahul Raj</span>
+        <span class="brand-status"><span class="pulse-dot"></span>Principal Engineer</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#impact" class="active">Impact</a></li>
+      <li><a href="#architectures">Architectures</a></li>
+      <li><a href="#simulator">ROI Simulator</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Tech Ecosystem</a></li>
+      <li><a href="#contact">Get In Touch</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="btn-cmd" id="open-cmd-btn" title="Open Command Palette">
+        <span>Quick Jump</span>
+        <span class="kbd">⌘K</span>
+      </button>
+      <button class="btn-cmd" onclick="window.print()" title="Print Formatted Resume">
+        <span>🖨️ Print Resume</span>
+      </button>
+      <button class="btn-icon" id="theme-toggle" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+        <span id="theme-icon">☀️</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="hero-pill-bar">
+            <span class="hero-badge">12+ YEARS ARCHITECTURE, AI &amp; APPSEC</span>
+            <span class="hero-location">📍 Noida / Bangalore, India</span>
+          </div>
+          <h1 class="hero-title">
+            Architecting <span class="gradient-text">Secure Cloud-Native Systems</span> &amp; <span class="gradient-text">Agentic AI</span>
+          </h1>
+          <div class="hero-role-rotator">
+            <span>&gt;</span>
+            <span id="typewriter-text">Principal Member of Technical Staff @ Oracle (HDI)</span>
+            <span class="cursor-blink"></span>
+          </div>
+          <p class="hero-bio">
+            Principal-level software engineer with 12+ years designing and delivering scalable, cloud-native distributed systems across healthcare, enterprise SaaS, and data platforms. Deep expertise in Java, Spring Boot, microservices, React, AWS, and OCI, with a growing focus on LLM-powered applications, Model Context Protocol (MCP), and agentic AI workflows. Recognized authority in Application Security &amp; Enterprise Security Governance, leading OAuth 2.0, Spring Security, SSO/MFA, RBAC, OWASP, SAST (Fortify, Checkmarx), container/CVE scanning (Grype, NVD, Prisma Scan), and Oracle OSSA/CSSAP compliance alongside a proven record of delivering a 68% AWS cost reduction, 35–40% AI-assisted productivity gains, and 30–35% faster security remediation.
+          </p>
+          <div class="hero-cta-row">
+            <a href="#contact" class="btn-primary">✉️ Get In Touch →</a>
+            <a href="#architectures" class="btn-secondary">Explore System Architectures</a>
+            <button class="btn-secondary" onclick="window.print()">🖨️ Print Executive Resume</button>
+          </div>
+          <div class="hero-quick-links">
+            <a href="#contact">💬 Direct Inquiry Form</a>
+            <a href="https://www.linkedin.com/in/rahulrajsonu" target="_blank" rel="noopener noreferrer">🔗 linkedin.com/in/rahulrajsonu ↗</a>
+            <span>🛡️ Application Security &amp; OSSA Governance Lead</span>
+          </div>
+        </div>
+
+        <!-- Interactive Agentic AI & Architecture Terminal -->
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <span class="terminal-title">rahul@principal-arch:~ (interactive-agent-shell)</span>
+            <span style="font-family:var(--font-mono);font-size:0.7rem;color:#10b981;">● LIVE</span>
+          </div>
+          <div class="terminal-body" id="terminal-output"></div>
+          <div class="term-cmd-bar">
+            <button class="term-chip active" data-cmd="overview">./profile --summary</button>
+            <button class="term-chip" data-cmd="security">./appsec-gov --audit</button>
+            <button class="term-chip" data-cmd="mcp">./mcp-search --gen2</button>
+            <button class="term-chip" data-cmd="rca">./rca-agent --triage</button>
+            <button class="term-chip" data-cmd="finops">./aws-finops --save</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quantified Key Achievements Bento Strip -->
+      <div class="kpi-grid" id="impact">
+        <div class="kpi-card">
+          <div class="kpi-metric"><span class="counter" data-target="68">68</span><span class="kpi-unit">%</span></div>
+          <div class="kpi-label">AWS Cloud Cost Reduction</div>
+          <p class="kpi-desc">Delivered via query partitioning, replacing Glue Crawlers with scheduled Lambda functions, and S3 lifecycle retention policies.</p>
+          <span class="kpi-tag">NextGen Healthcare · FinOps</span>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-metric"><span class="counter" data-target="40">40</span><span class="kpi-unit">–50%</span></div>
+          <div class="kpi-label">Faster On-Call Incident TAT</div>
+          <p class="kpi-desc">Architected and delivered an automated root-cause analysis (RCA) AI agent accelerating incident triage and resolution.</p>
+          <span class="kpi-tag">Oracle HDI · Agentic RCA</span>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-metric"><span class="counter" data-target="35">35</span><span class="kpi-unit">–40%</span></div>
+          <div class="kpi-label">Engineering Productivity Gain</div>
+          <p class="kpi-desc">Embedded Codex AI agent into code analysis, debugging, testing, technology-baseline migrations, and OCI resource cleanup.</p>
+          <span class="kpi-tag">Oracle HDI · AI Engineering</span>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-metric"><span class="counter" data-target="30">30</span><span class="kpi-unit">–35%</span></div>
+          <div class="kpi-label">AppSec &amp; Governance Velocity</div>
+          <p class="kpi-desc">Led 3rd-party library governance, SAST/CVE remediation, OSSA Maturity Bar compliance, and reusable AI security automation skills.</p>
+          <span class="kpi-tag">Oracle HDI · AppSec &amp; AI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE SYSTEM ARCHITECTURE EXPLORER -->
+    <section id="architectures">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Interactive System Blueprints</div>
+          <h2 class="section-title">Production Architectures &amp; Agentic Workflows</h2>
+        </div>
+        <p class="section-subtitle">Select any architectural blueprint below and click individual pipeline stages to inspect technical decisions, protocols, and measured outcomes.</p>
+      </div>
+
+      <div class="arch-container">
+        <div class="arch-tabs" id="arch-tabs">
+          <button class="arch-tab active" data-arch="mcp">🧠 Gen2 Semantic Search &amp; MCP (Oracle HDI)</button>
+          <button class="arch-tab" data-arch="rca">🤖 Autonomous RCA &amp; FinOps Agents (Oracle HDI)</button>
+          <button class="arch-tab" data-arch="aws">☁️ Serverless FinOps &amp; Data Hub (NextGen)</button>
+          <button class="arch-tab" data-arch="dmp">⚡ Multi-Platform AdTech Ingestion (Oracle)</button>
+        </div>
+
+        <div class="arch-layout">
+          <div class="arch-diagram-stage">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.75rem;">
+              <span id="arch-stage-title" style="font-weight:700;font-size:0.95rem;color:var(--accent-cyan);">Pipeline Topology — Click any node to inspect</span>
+              <span id="arch-stage-org" style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-secondary);">Oracle Health Data Intelligence (2025–Present)</span>
+            </div>
+
+            <div class="arch-nodes-flow" id="arch-nodes-container"></div>
+
+            <div>
+              <div class="arch-flow-Packet"></div>
+              <div style="display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:0.71rem;color:var(--text-muted);">
+                <span>INGEST / REQUEST</span>
+                <span>ORCHESTRATION &amp; CONTEXT</span>
+                <span>CORE ENGINE</span>
+                <span>MEASURED OUTCOME</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="arch-inspector" id="arch-inspector">
+            <div>
+              <span class="inspector-badge" id="insp-step">STAGE 01 · NODE INSPECTOR</span>
+              <h3 class="inspector-title" id="insp-title">Select a pipeline node</h3>
+              <p class="inspector-desc" id="insp-desc"></p>
+            </div>
+            <div class="inspector-metrics">
+              <div style="color:var(--text-muted);font-family:var(--font-mono);font-size:0.72rem;margin-bottom:0.25rem;">KEY TECHNOLOGIES &amp; DELIVERABLE IMPACT</div>
+              <div id="insp-impact" style="font-weight:600;color:var(--accent-emerald);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXECUTIVE INSIGHTS & INTERACTIVE ROI SIMULATOR -->
+    <section id="simulator">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Interactive Engineering Telemetry</div>
+          <h2 class="section-title">Impact Simulator &amp; Competency Radar</h2>
+        </div>
+        <p class="section-subtitle">Model how Rahul's verified engineering benchmarks translate to your organization's cloud spend, engineering velocity, and incident response.</p>
+      </div>
+
+      <div class="insights-grid">
+        <div class="simulator-card">
+          <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:0.35rem;">Engineering ROI &amp; Cloud FinOps Simulator</h3>
+          <p style="font-size:0.84rem;color:var(--text-secondary);margin-bottom:1.25rem;">Benchmarked against Rahul's production results: <strong>68%</strong> AWS cost reduction, <strong>35–40%</strong> Codex AI productivity lift, and <strong>40–50%</strong> RCA incident TAT reduction.</p>
+
+          <div class="sim-control">
+            <div class="sim-label-row">
+              <span>Monthly Cloud Data/ETL Spend (USD)</span>
+              <span class="sim-val" id="sim-cloud-val">$50,000 / mo</span>
+            </div>
+            <input type="range" id="sim-cloud" min="10000" max="250000" step="5000" value="50000" />
+          </div>
+
+          <div class="sim-control">
+            <div class="sim-label-row">
+              <span>Engineering Squad / Org Size (Engineers)</span>
+              <span class="sim-val" id="sim-team-val">25 Engineers</span>
+            </div>
+            <input type="range" id="sim-team" min="5" max="120" step="5" value="25" />
+          </div>
+
+          <div class="sim-control">
+            <div class="sim-label-row">
+              <span>Monthly On-Call Triage Hours</span>
+              <span class="sim-val" id="sim-inc-val">160 hrs / mo</span>
+            </div>
+            <input type="range" id="sim-inc" min="40" max="600" step="20" value="160" />
+          </div>
+
+          <div class="sim-outputs">
+            <div class="sim-out-box">
+              <div class="sim-out-num" id="out-cloud-save">$408,000</div>
+              <div class="sim-out-lbl">Est. Annual Cloud Savings (at 68% benchmark)</div>
+            </div>
+            <div class="sim-out-box">
+              <div class="sim-out-num" id="out-dev-hours">+9.4 FTE</div>
+              <div class="sim-out-lbl">Effective Engineering Capacity (+37.5% AI lift)</div>
+            </div>
+            <div class="sim-out-box">
+              <div class="sim-out-num" id="out-tat-hours">72 hrs/mo</div>
+              <div class="sim-out-lbl">On-Call Triage Saved (at 45% RCA Agent reduction)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Competency Radar & Domain Distribution -->
+        <div class="radar-card" style="display:flex;flex-direction:column;justify-content:space-between;">
+          <div>
+            <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:0.35rem;">Principal Competency Profile (12+ Years)</h3>
+            <p style="font-size:0.84rem;color:var(--text-secondary);margin-bottom:1rem;">Synthesizing backend distributed systems mastery with enterprise Application Security governance and modern Agentic AI.</p>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:center;">
+            <svg viewBox="0 0 260 260" style="width:100%;max-width:240px;margin:0 auto;overflow:visible;">
+              <polygon points="130,25 221,77 221,182 130,235 39,182 39,77" fill="none" stroke="rgba(148,163,184,0.2)" stroke-width="1" />
+              <polygon points="130,55 195,92 195,167 130,205 65,167 65,92" fill="none" stroke="rgba(148,163,184,0.16)" stroke-width="1" />
+              <polygon points="130,85 169,107 169,152 130,175 91,152 91,107" fill="none" stroke="rgba(148,163,184,0.12)" stroke-width="1" />
+              <line x1="130" y1="130" x2="130" y2="25" stroke="rgba(148,163,184,0.2)" />
+              <line x1="130" y1="130" x2="221" y2="77" stroke="rgba(148,163,184,0.2)" />
+              <line x1="130" y1="130" x2="221" y2="182" stroke="rgba(148,163,184,0.2)" />
+              <line x1="130" y1="130" x2="130" y2="235" stroke="rgba(148,163,184,0.2)" />
+              <line x1="130" y1="130" x2="39" y2="182" stroke="rgba(148,163,184,0.2)" />
+              <line x1="130" y1="130" x2="39" y2="77" stroke="rgba(148,163,184,0.2)" />
+              <polygon points="130,30 214,81 212,177 130,230 48,176 46,81" fill="rgba(6, 182, 212, 0.24)" stroke="#06b6d4" stroke-width="2.5" />
+              <circle cx="130" cy="30" r="4.5" fill="#06b6d4" />
+              <circle cx="214" cy="81" r="4.5" fill="#6366f1" />
+              <circle cx="212" cy="177" r="4.5" fill="#10b981" />
+              <circle cx="130" cy="230" r="4.5" fill="#06b6d4" />
+              <circle cx="48" cy="176" r="4.5" fill="#f59e0b" />
+              <circle cx="46" cy="81" r="4.5" fill="#818cf8" />
+              <text x="130" y="14" text-anchor="middle" fill="currentColor" font-size="9.5" font-weight="700">Distributed Systems</text>
+              <text x="228" y="79" text-anchor="start" fill="currentColor" font-size="9.5" font-weight="700">Agentic AI &amp; MCP</text>
+              <text x="228" y="186" text-anchor="start" fill="currentColor" font-size="9.5" font-weight="700">Cloud (AWS/OCI)</text>
+              <text x="130" y="250" text-anchor="middle" fill="currentColor" font-size="9.5" font-weight="700">AppSec &amp; OSSA</text>
+              <text x="32" y="186" text-anchor="end" fill="currentColor" font-size="9.5" font-weight="700">Data &amp; Search</text>
+              <text x="32" y="79" text-anchor="end" fill="currentColor" font-size="9.5" font-weight="700">React / UI / BFF</text>
+            </svg>
+
+            <div style="display:flex;flex-direction:column;gap:0.65rem;font-size:0.82rem;">
+              <div>
+                <div style="display:flex;justify-content:space-between;font-weight:600;"><span>Java / Spring Boot / Microservices</span><span style="color:var(--accent-cyan);">12+ Yrs</span></div>
+                <div style="height:6px;background:var(--bg-secondary);border-radius:99px;margin-top:3px;overflow:hidden;"><div style="width:98%;height:100%;background:var(--accent-cyan);"></div></div>
+              </div>
+              <div>
+                <div style="display:flex;justify-content:space-between;font-weight:600;"><span>AppSec (OAuth2, SAST, OWASP, OSSA)</span><span style="color:var(--accent-amber);">Enterprise Lead</span></div>
+                <div style="height:6px;background:var(--bg-secondary);border-radius:99px;margin-top:3px;overflow:hidden;"><div style="width:95%;height:100%;background:var(--accent-amber);"></div></div>
+              </div>
+              <div>
+                <div style="display:flex;justify-content:space-between;font-weight:600;"><span>Cloud Architecture (AWS, OCI, Azure)</span><span style="color:var(--accent-indigo);">9+ Yrs</span></div>
+                <div style="height:6px;background:var(--bg-secondary);border-radius:99px;margin-top:3px;overflow:hidden;"><div style="width:94%;height:100%;background:var(--accent-indigo);"></div></div>
+              </div>
+              <div>
+                <div style="display:flex;justify-content:space-between;font-weight:600;"><span>Agentic AI, MCP, RAG &amp; Semantic Search</span><span style="color:var(--accent-emerald);">Principal Lead</span></div>
+                <div style="height:6px;background:var(--bg-secondary);border-radius:99px;margin-top:3px;overflow:hidden;"><div style="width:92%;height:100%;background:var(--accent-emerald);"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE WORK EXPERIENCE TIMELINE -->
+    <section id="experience">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">12+ Years Career Progression</div>
+          <h2 class="section-title">Engineering Leadership &amp; Work Experience</h2>
+        </div>
+        <p class="section-subtitle">Filter Rahul's 6 career roles by engineering domain or click any technology pill to highlight cross-role adoption.</p>
+      </div>
+
+      <div class="timeline-controls" id="exp-filters">
+        <button class="filter-btn active" data-filter="all">All Roles (6)</button>
+        <button class="filter-btn" data-filter="ai">AI, MCP &amp; Agentic Workflows</button>
+        <button class="filter-btn" data-filter="security">Application Security, OAuth2 &amp; Governance</button>
+        <button class="filter-btn" data-filter="cloud">Cloud, FinOps &amp; Serverless</button>
+        <button class="filter-btn" data-filter="data">Data Pipelines, Search &amp; Streaming</button>
+        <button class="filter-btn" data-filter="frontend">UI, React, Angular &amp; BFF</button>
+      </div>
+
+      <div class="timeline-list" id="timeline-list"></div>
+    </section>
+
+    <!-- INTERACTIVE CORE TECHNOLOGIES ECOSYSTEM -->
+    <section id="skills">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Full-Stack, Cloud, AppSec &amp; Agentic AI Stack</div>
+          <h2 class="section-title">Interactive Core Technologies Matrix</h2>
+        </div>
+        <div class="skills-toolbar">
+          <input type="text" id="skill-search" class="skill-search-input" placeholder="🔍 Filter 59 technologies (e.g. OAuth 2.0, Fortify, MCP, Spring Boot, AWS)..." />
+        </div>
+      </div>
+
+      <div class="skills-categories-grid" id="skills-grid"></div>
+    </section>
+
+    <!-- CREDENTIALS & EDUCATION -->
+    <section id="credentials">
+      <div class="edu-banner">
+        <div>
+          <div class="section-eyebrow" style="margin-bottom:0.25rem;">Academic Credentials</div>
+          <h3 style="font-size:1.35rem;font-weight:800;">Bachelor of Engineering (B.E. — Electrical &amp; Electronics Engineering)</h3>
+          <p style="color:var(--text-secondary);font-size:0.95rem;">Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV), Bhopal, Madhya Pradesh</p>
+        </div>
+        <div style="font-family:var(--font-mono);font-size:0.88rem;background:var(--bg-card);padding:0.6rem 1.1rem;border-radius:var(--radius-sm);border:1px solid var(--border-subtle);">
+          🎓 Aug 2010 – July 2014
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE INTEGRATED GOOGLE FORM ("Get In Touch") -->
+    <section id="contact">
+      <div class="section-header">
+        <div>
+          <div class="section-eyebrow">Direct Connection</div>
+          <h2 class="section-title">Get In Touch</h2>
+        </div>
+        <p class="section-subtitle">Send a message directly to Rahul Raj. Submissions are recorded in real time via Google Forms &amp; Sheets.</p>
+      </div>
+
+      <div class="contact-hub-layout">
+        <!-- Left: Live Connected Google Form -->
+        <div class="contact-form-card">
+          <div class="privacy-shield-badge">
+            <span class="pulse-dot"></span>
+            <span>Live Connected · Google Form &amp; Sheet Response Stream</span>
+          </div>
+          <h3 style="font-size:1.22rem;font-weight:800;margin-bottom:0.35rem;">Send a Message to Rahul Raj</h3>
+          <p style="font-size:0.86rem;color:var(--text-secondary);margin-bottom:1rem;">
+            Select an inquiry category and complete the fields below to connect regarding Principal Engineering leadership, cloud architecture, application security, or AI engineering initiatives.
+          </p>
+
+          <form
+            id="portfolio-contact-form"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSfs30_jbmFBeDGWk7VHCQudKK1Vv5jHqf3jIU26oAvNxFNhjQ/formResponse"
+            method="POST"
+            target="hidden_gform_iframe"
+            autocomplete="on"
+          >
+            <!-- Honeypot field to block automated spam bots -->
+            <input type="text" id="form-honeypot" style="display:none !important;" tabindex="-1" autocomplete="off" />
+
+
+            <div class="form-label" style="margin-bottom:0.2rem;">
+              <span>Inquiry Category</span>
+              <span class="req" id="selected-topic-display">Principal / Architecture Role</span>
+            </div>
+            <div class="topic-pills-row" id="topic-pills">
+              <button type="button" class="topic-pill active" data-topic="Principal / Architecture Role">🏢 Principal / Architecture Role</button>
+              <button type="button" class="topic-pill" data-topic="AI, MCP & Agentic Workflows">🤖 AI, MCP &amp; Agentic Workflows</button>
+              <button type="button" class="topic-pill" data-topic="Application Security & Governance">🛡️ AppSec &amp; Security Governance</button>
+              <button type="button" class="topic-pill" data-topic="Cloud FinOps & Distributed Systems">☁️ Cloud FinOps &amp; Distributed Systems</button>
+              <button type="button" class="topic-pill" data-topic="General Collaboration">💬 General Collaboration</button>
+            </div>
+            <!-- Google Form Entry: Inquiry Category (entry.1202564168) -->
+            <input type="hidden" name="entry.1202564168" id="cf-topic" value="Principal / Architecture Role" />
+
+            <div class="form-grid-2">
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="cf-name"><span>Name</span><span class="req">*</span></label>
+                <!-- Google Form Entry: Name (entry.2005620554) -->
+                <input type="text" name="entry.2005620554" id="cf-name" class="form-input" placeholder="e.g. Priya Sharma" required />
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="cf-email"><span>Email</span><span class="req">*</span></label>
+                <!-- Google Form Entry: Email (entry.1045781291) -->
+                <input type="email" name="entry.1045781291" id="cf-email" class="form-input" placeholder="e.g. priya@company.com" required />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="cf-org"><span>Organization</span><span class="req">*</span></label>
+                <!-- Google Form Entry: Organization (entry.1065046570) -->
+                <input type="text" name="entry.1065046570" id="cf-org" class="form-input" placeholder="e.g. Enterprise Cloud / HealthTech" required />
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label class="form-label" for="cf-phone"><span>Phone number (Optional)</span></label>
+                <!-- Google Form Entry: Phone number (entry.1166974658) -->
+                <input type="tel" name="entry.1166974658" id="cf-phone" class="form-input" placeholder="e.g. +91 / +1 (Optional)" />
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top:1rem;">
+              <div class="form-label">
+                <label for="cf-message">Message <span class="req">*</span></label>
+                <span id="char-count" style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);">0 / 1500 chars</span>
+              </div>
+              <div class="quick-template-bar">
+                <span style="font-size:0.72rem;color:var(--text-muted);">Quick Fill:</span>
+                <button type="button" class="tpl-chip" data-tpl="leadership">Principal Engineering Opportunity</button>
+                <button type="button" class="tpl-chip" data-tpl="ai">MCP / Agentic AI Architecture</button>
+                <button type="button" class="tpl-chip" data-tpl="finops">AppSec &amp; Cloud FinOps</button>
+              </div>
+              <!-- Google Form Entry: Message (entry.839337160) -->
+              <textarea name="entry.839337160" id="cf-message" class="form-textarea" maxlength="1500" placeholder="Share details about the role, architectural challenge, or collaboration timeline..." required></textarea>
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-top:0.5rem;">
+              <button type="submit" class="btn-primary" id="cf-submit-btn">
+                <span id="cf-submit-text">🚀 Send Message</span>
+              </button>
+              <span style="font-family:var(--font-mono);font-size:0.74rem;color:var(--text-muted);">
+                🔒 Protected Submission · Synced to Google Forms &amp; Sheets
+              </span>
+            </div>
+
+            <div class="submission-banner" id="cf-success-banner"></div>
+          </form>
+        </div>
+
+        <!-- Right: Professional Summary & Printable Resume Action -->
+        <div class="contact-info-card" style="display:flex;flex-direction:column;justify-content:space-between;gap:1.25rem;">
+          <div>
+            <div class="section-eyebrow" style="margin-bottom:0.35rem;">Availability &amp; Focus Areas</div>
+            <h3 style="font-size:1.15rem;font-weight:800;margin-bottom:0.5rem;">Principal Architecture, AppSec &amp; AI</h3>
+            <p style="font-size:0.86rem;color:var(--text-secondary);margin-bottom:1rem;">
+              Available for high-impact discussions around distributed healthcare/enterprise platforms, application security governance, Model Context Protocol (MCP) ecosystems, autonomous engineering agents, and multi-cloud FinOps.
+            </p>
+
+            <div style="display:flex;flex-direction:column;gap:0.65rem;background:var(--bg-secondary);padding:1.1rem;border-radius:var(--radius-md);border:1px solid var(--border-subtle);font-size:0.84rem;">
+              <div><strong>📍 Current Base:</strong> Noida, India</div>
+              <div><strong>🏛️ Current Role:</strong> Principal Member of Technical Staff @ Oracle (HDI)</div>
+              <div><strong>🎯 Core Domains:</strong> Distributed Systems · Cloud · AppSec · Agentic AI</div>
+              <div><strong>🎓 Education:</strong> B.E. (EEE) — RGPV, Bhopal</div>
+            </div>
+          </div>
+
+          <div style="background:var(--bg-secondary);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1rem;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.45rem;">
+              <span style="font-family:var(--font-mono);font-size:0.73rem;color:var(--accent-cyan);text-transform:uppercase;">Recent Inquiry Activity</span>
+              <span id="submission-counter-badge" style="font-family:var(--font-mono);font-size:0.7rem;color:var(--accent-emerald);">● Connected</span>
+            </div>
+            <div id="recent-submissions-list" style="font-family:var(--font-mono);font-size:0.75rem;color:var(--text-secondary);line-height:1.5;">
+              Ready to record responses directly to Google Forms &amp; Sheets.
+            </div>
+          </div>
+
+          <div style="border-top:1px solid var(--border-subtle);padding-top:1rem;display:flex;flex-direction:column;gap:0.6rem;">
+            <div style="font-family:var(--font-mono);font-size:0.72rem;color:var(--text-muted);text-transform:uppercase;">Professional Links &amp; Printable Resume</div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.6rem;">
+              <a href="https://www.linkedin.com/in/rahulrajsonu" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="flex:1;justify-content:center;padding:0.6rem 0.9rem;font-size:0.83rem;">
+                🔗 LinkedIn (/in/rahulrajsonu) ↗
+              </a>
+              <button class="btn-primary" style="padding:0.6rem 1rem;font-size:0.83rem;" onclick="window.print()">
+                🖨️ Print Resume
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Rahul Raj · Principal Engineer (Distributed Systems | Cloud Architecture | AI Engineering | Application Security)</p>
+  </footer>
+
+  <!-- ==========================================================================
+       DEDICATED PRINTABLE EXECUTIVE RESUME (VISIBLE ONLY WHEN PRINTING)
+       Engineered to fit cleanly across 2 balanced A4 pages with zero bottom gaps
+       ========================================================================== -->
+  <article id="printable-resume" aria-label="Printable Resume of Rahul Raj">
+    <div class="pr-header">
+      <div class="pr-name">Rahul Raj</div>
+      <div class="pr-headline">Principal Engineer &nbsp;|&nbsp; Distributed Systems &nbsp;|&nbsp; Cloud Architecture &nbsp;|&nbsp; AI &amp; Application Security</div>
+      <div class="pr-contact-bar">
+        Noida, India &nbsp;|&nbsp; linkedin.com/in/rahulrajsonu &nbsp;|&nbsp; Portfolio Contact Form
+      </div>
+    </div>
+
+    <div class="pr-section">
+      <div class="pr-section-title">Profile Summary</div>
+      <p class="pr-summary">
+        Principal-level software engineer with 12+ years designing and delivering scalable, cloud-native distributed systems and secure enterprise architectures across healthcare, enterprise SaaS, and data platforms. Deep expertise in Java, Spring Boot, microservices, React, AWS, and OCI, paired with a strong focus on LLM-powered applications, Model Context Protocol (MCP), agentic AI workflows, and end-to-end Application Security. Proven leader in enterprise security governance (Oracle OSSA Maturity Bar, CSSAP, OWASP), authentication and access control (OAuth 2.0, Spring Security, SSO/MFA, RBAC, Cognito), static and container vulnerability management (SAST, Fortify, Checkmarx, Grype, NVD, Prisma Scan), and third-party library remediation. Track record of translating complex engineering and security challenges into resilient solutions—delivering outcomes such as a 68% AWS cost reduction, 35–40% productivity gains through AI-assisted engineering, and 30–35% faster security compliance and vulnerability remediation via reusable AI automation skills.
+      </p>
+    </div>
+
+    <div class="pr-section">
+      <div class="pr-section-title">Key Achievements</div>
+      <ul class="pr-list">
+        <li>Delivered a <strong>68% reduction in AWS cloud costs</strong> through query optimization, serverless automation, and storage lifecycle management.</li>
+        <li>Drove <strong>35–40% engineering productivity gains</strong> by embedding the Codex AI agent into development, testing, and technology-migration workflows.</li>
+        <li>Architected and delivered an <strong>AI agent for automated root-cause analysis</strong>, accelerating incident triage and resolution for on-call engineering teams and reducing engineering effort and turnaround time (TAT) by <strong>40–50%</strong>.</li>
+        <li>Led third-party library governance, vulnerability scanning, remediation initiatives, and security compliance, while leveraging AI tools and developing reusable AI skills to automate repetitive analysis and reporting workflows—reducing manual effort, accelerating turnaround, and improving engineering productivity by <strong>30–35%</strong>.</li>
+        <li>Knowledge sharing through peer mentoring and KT sessions, strengthening team capabilities and technical expertise.</li>
+      </ul>
+    </div>
+
+    <div class="pr-section">
+      <div class="pr-section-title">Core Technologies</div>
+      <div class="pr-tech-grid">
+        <div class="pr-tech-cat">AI &amp; Agentic Tools:</div>
+        <div class="pr-tech-items">LLM, MCP, RAG, AI skills, Agentic Workflow, Spring AI, LangChain, LangGraph, Codex, Claude, Cline</div>
+        <div class="pr-tech-cat">Languages &amp; Frameworks:</div>
+        <div class="pr-tech-items">Java, Python, Node.js, TypeScript, Spring Boot, Hibernate (JPA), JUnit, Express, Mockito, Kafka</div>
+        <div class="pr-tech-cat">Web Technologies:</div>
+        <div class="pr-tech-items">ReactJS, Angular, OJET, HTML5, CSS3</div>
+        <div class="pr-tech-cat">Databases:</div>
+        <div class="pr-tech-items">MySQL, MariaDB, MongoDB, DynamoDB, RedShift, PostgreSQL, PGVector, OpenSearch</div>
+        <div class="pr-tech-cat">Cloud &amp; DevOps:</div>
+        <div class="pr-tech-items">AWS, OCI, Docker, Kubernetes, Jenkins, CI/CD, New Relic, Splunk, Postman, Airflow, APM, OpenTelemetry</div>
+        <div class="pr-tech-cat">Security:</div>
+        <div class="pr-tech-items">OAuth 2.0, Spring Security, SSO, MFA, Fortify, CheckMarx, SAST, OWASP, Grype, NVD, Prisma Scan</div>
+        <div class="pr-tech-cat">Tools &amp; Practices:</div>
+        <div class="pr-tech-items">IntelliJ IDEA, VS Code, Eclipse, Git, GitHub, Bitbucket, JIRA, Gradle, Maven, Agile/Scrum, SonarQube</div>
+      </div>
+    </div>
+
+    <div class="pr-section">
+      <div class="pr-section-title">Work Experience</div>
+
+      <div class="pr-role">
+        <div class="pr-role-top">
+          <div class="pr-role-header">
+            <span class="pr-role-title">Principal Member of Technical Staff</span>
+            <span class="pr-role-date">Apr 2025 – Present</span>
+          </div>
+          <div class="pr-role-org">Oracle (Health Data Intelligence), Bangalore</div>
+        </div>
+        <ul class="pr-list">
+          <li>Led architectural discussions and cross-team collaboration to build next-generation, AI-enabled healthcare systems; delivered Provider Directory UI and APIs while optimizing ETL applications for improved performance and efficiency.</li>
+          <li>Conducted knowledge-transfer sessions and mentored peers on functional and technical best practices, strengthening team capabilities, accelerating knowledge sharing, and fostering a culture of continuous learning.</li>
+          <li>Leveraging Gen2 OHDS through MCP (Model Context Protocol) services for intelligent search and retrieval of patient and provider data, designing and developing Gen2 semantic search, enhancing the existing OpenSearch-based provider search functionality for more accurate, and context-aware retrieval.</li>
+          <li>Drove 35–40% engineering productivity gains by leveraging Codex for code analysis, debugging, development, testing, and technology-baseline migrations across multiple codebases, deployed AI agents to identify and clean up abandoned OCI resources, reducing unnecessary cloud spend.</li>
+          <li>Architected and delivered an AI agent for automated root-cause analysis, accelerating incident triage and resolution for on-call engineering teams and reducing engineering effort and turnaround time (TAT) by 40–50%.</li>
+          <li>Led third-party library governance, vulnerability scanning, and remediation initiatives to achieve alignment with Oracle’s OSSA Maturity Bar security compliance standards, while leveraging AI tools and developing reusable AI skills to automate repetitive analysis and reporting workflows, reducing manual effort, accelerating turnaround, and improving engineering productivity by 30–35%.</li>
+        </ul>
+      </div>
+
+      <div class="pr-role">
+        <div class="pr-role-top">
+          <div class="pr-role-header">
+            <span class="pr-role-title">Staff Software Engineer</span>
+            <span class="pr-role-date">Feb 2024 – Apr 2025</span>
+          </div>
+          <div class="pr-role-org">NextGen Healthcare, Bangalore-Remote</div>
+        </div>
+        <ul class="pr-list">
+          <li>Handling cross-functional requirements, liaising with partners and the product team to translate business needs into technical tasks.</li>
+          <li>Conducted knowledge-transfer sessions and mentored peers on functional and technical best practices, strengthening team capabilities, accelerating knowledge sharing, and fostering a culture of continuous learning.</li>
+          <li>Achieving a 68% reduction in AWS cloud costs through query partitioning, replacing Glue Crawlers with scheduled Lambda functions, and S3 retention policies.</li>
+          <li>Overseeing end-to-end architecture for the Data Hub Experience initiative, enabling secure, interoperable patient data sharing.</li>
+          <li>Migrating multiple services to Java 21 and Spring Boot 3, designing generic, non-blocking solutions for cloud compatibility.</li>
+          <li>Developing serverless integrations using AWS Lambda, S3, EventBridge, DynamoDB, RedShift, CodePipeline, CloudFormation, and API Gateway secured via OAuth2/Cognito.</li>
+        </ul>
+      </div>
+
+      <div class="pr-role">
+        <div class="pr-role-top">
+          <div class="pr-role-header">
+            <span class="pr-role-title">Senior Software Engineer</span>
+            <span class="pr-role-date">Oct 2020 – Feb 2024</span>
+          </div>
+          <div class="pr-role-org">Oracle, Bangalore</div>
+        </div>
+        <ul class="pr-list">
+          <li>Owning end-to-end architecture of the DMP adapter application and leading design of end-to-end product integrations.</li>
+          <li>Designing the DMP-Activation backfill service and OCI Object Storage integration service for reliable legacy data migration and backup.</li>
+          <li>Building Airflow DAGs integrating major platforms including Snapchat, Pinterest, Google, Amazon, Twitter, Facebook, and Trade Desk for data ingestion.</li>
+          <li>Upgrading OAuth 1.0 to OAuth 2.0 for the Twitter integration and completing the application's CSSAP security certification.</li>
+          <li>Establishing a CI-based testing environment with Mock Server, and configuring Grafana dashboards for data-driven operational review.</li>
+          <li>Conducted knowledge-transfer sessions on ReactJS, Redux Toolkit, and the BFF design pattern, and leading UI/cloud-adapter enhancements for product integration.</li>
+        </ul>
+      </div>
+
+      <div class="pr-role">
+        <div class="pr-role-top">
+          <div class="pr-role-header">
+            <span class="pr-role-title">Software Engineer-II</span>
+            <span class="pr-role-date">Dec 2018 – Aug 2020</span>
+          </div>
+          <div class="pr-role-org">Dell Technology, Bangalore</div>
+        </div>
+        <ul class="pr-list">
+          <li>Developing UI components using Angular, NodeJS, HTML5, and CSS.</li>
+          <li>Designing System Reliability Engineering tools to optimize operational efficiency.</li>
+          <li>Implementing REST APIs with TDD/BDD methodologies, and RBAC and SSO/PCF authentication for secure access control.</li>
+          <li>Building an HDFS-adapter and REST APIs for Elastic API querying and NAS Path directory access.</li>
+          <li>Designing Kafka producer/consumer APIs with Spring Boot for real-time data streaming.</li>
+          <li>Applying Fortify and Checkmarx for code security analysis.</li>
+        </ul>
+      </div>
+
+      <div class="pr-role">
+        <div class="pr-role-top">
+          <div class="pr-role-header">
+            <span class="pr-role-title">Senior System Engineer</span>
+            <span class="pr-role-date">Sept 2017 – Dec 2018</span>
+          </div>
+          <div class="pr-role-org">Infosys, Bangalore</div>
+        </div>
+        <ul class="pr-list">
+          <li>Collaborating in an agile team using Jenkins, GitHub, Splunk, New Relic, and PCF to enhance productivity.</li>
+          <li>Developing REST APIs with Spring Boot following BDD/TDD, with comprehensive e2e and JUnit test coverage.</li>
+          <li>Crafting UI components using Angular 4, ReactJS, NodeJS, HTML5, and CSS, and configuring Azure cloud infrastructure.</li>
+          <li>Spearheading migration of in-house projects to Azure cloud and legacy code to GitHub.</li>
+          <li>Elevating API management and security through Apigee integration.</li>
+        </ul>
+      </div>
+
+      <div class="pr-role">
+        <div class="pr-role-top">
+          <div class="pr-role-header">
+            <span class="pr-role-title">Software Developer</span>
+            <span class="pr-role-date">July 2015 – July 2017</span>
+          </div>
+          <div class="pr-role-org">Bluethink IT Consulting, Noida</div>
+        </div>
+        <ul class="pr-list">
+          <li>Designing and implementing RESTful APIs using Spring Boot.</li>
+          <li>Developing UI components using AngularJS, HTML5, and CSS.</li>
+          <li>Creating low-level design documents, including class and sequence diagrams.</li>
+          <li>Collaborating cross-functionally in Agile ceremonies, mentoring junior engineers on best practices.</li>
+          <li>Writing unit and functional tests, and managing version control via Git.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pr-section" style="margin-bottom:0;">
+      <div class="pr-section-title">Credentials</div>
+      <div style="font-size:8.9pt;color:#0f172a;">
+        <strong>B.E. (EEE)</strong> — Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal, MP, Aug 2010 – July 2014
+      </div>
+    </div>
+  </article>
+
+  <!-- COMMAND PALETTE MODAL -->
+  <div class="modal-backdrop" id="cmd-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <span style="font-family:var(--font-mono);font-weight:700;font-size:0.9rem;">⚡ Quick Navigation &amp; Actions</span>
+        <button class="btn-icon" onclick="closeModal('cmd-modal')">✕</button>
+      </div>
+      <input type="text" id="cmd-input" class="skill-search-input" style="width:100%;" placeholder="Type a section or action..." />
+      <ul class="cmd-list" id="cmd-list">
+        <li class="cmd-item" onclick="jumpTo('#contact')"><span>✉️ Send a Message via Contact Form</span><span class="kbd">Jump</span></li>
+        <li class="cmd-item" onclick="closeModal('cmd-modal');window.print();"><span>🖨️ Print Formatted Executive Resume</span><span class="kbd">Print</span></li>
+        <li class="cmd-item" onclick="jumpTo('#impact')"><span>📊 View Quantified Key Achievements (68% AWS Cost Cut, 40–50% TAT Cut)</span><span class="kbd">Jump</span></li>
+        <li class="cmd-item" onclick="jumpTo('#architectures')"><span>🧠 Inspect Interactive System Architectures (MCP, RCA Agent, FinOps)</span><span class="kbd">Jump</span></li>
+        <li class="cmd-item" onclick="jumpTo('#simulator')"><span>🎛️ Run Cloud &amp; AI Engineering ROI Simulator</span><span class="kbd">Jump</span></li>
+        <li class="cmd-item" onclick="jumpTo('#experience')"><span>💼 Browse 12+ Years Work Experience Timeline</span><span class="kbd">Jump</span></li>
+        <li class="cmd-item" onclick="jumpTo('#skills')"><span>🛠️ Search 59 Core Technologies across 7 Domains</span><span class="kbd">Jump</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="toast">Action completed!</div>
+
+  <script id="portfolio-config-script">
+    // Live integrated Google Form ("Get In Touch") configuration
+    window.GOOGLE_FORM_CONFIG = {
+      actionUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfs30_jbmFBeDGWk7VHCQudKK1Vv5jHqf3jIU26oAvNxFNhjQ/formResponse",
+      entries: {
+        name: "entry.2005620554",
+        organization: "entry.1065046570",
+        topic: "entry.1202564168",
+        email: "entry.1045781291",
+        phone: "entry.1166974658",
+        message: "entry.839337160"
+      }
+    };
+  </script>
+
+  <script>
+    // 1. DATA: RESUME GROUNDED CONTENT (ZERO EMAIL/PHONE EXPOSURE)
+    const ROLES = [
+      {
+        title: "Principal Member of Technical Staff",
+        company: "Oracle (Health Data Intelligence)",
+        location: "Bangalore",
+        period: "Apr 2025 – Present",
+        domains: ["ai", "cloud", "data", "security", "frontend"],
+        bullets: [
+          "Led architectural discussions and cross-team collaboration to build next-generation, <strong>AI-enabled healthcare systems</strong>; delivered Provider Directory UI and APIs while optimizing ETL applications for improved performance and efficiency.",
+          "Leveraging <strong>Gen2 OHDS through MCP (Model Context Protocol)</strong> services for intelligent search and retrieval of patient and provider data, designing and developing <strong>Gen2 semantic search</strong> to enhance OpenSearch-based provider search for accurate, context-aware retrieval.",
+          "Drove <strong>35–40% engineering productivity gains</strong> by leveraging <strong>Codex</strong> for code analysis, debugging, development, testing, and technology-baseline migrations across multiple codebases; deployed AI agents to identify and clean up abandoned OCI resources, reducing unnecessary cloud spend.",
+          "Architected and delivered an <strong>AI agent for automated root-cause analysis (RCA)</strong>, accelerating incident triage and resolution for on-call engineering teams and reducing engineering effort and turnaround time (TAT) by <strong>40–50%</strong>.",
+          "Led third-party library governance, vulnerability scanning, and remediation initiatives aligned with <strong>Oracle’s OSSA Maturity Bar</strong> security compliance standards, while developing reusable <strong>AI skills</strong> to automate repetitive analysis and reporting workflows—improving productivity by <strong>30–35%</strong>.",
+          "Conducted knowledge-transfer sessions and mentored peers on functional and technical best practices, strengthening team capabilities and fostering a culture of continuous learning."
+        ],
+        tech: ["MCP", "LLM", "Codex", "Agentic Workflow", "AI skills", "OpenSearch", "PGVector", "OCI", "Java", "Spring Boot", "ReactJS", "OSSA Security"]
+      },
+      {
+        title: "Staff Software Engineer",
+        company: "NextGen Healthcare",
+        location: "Bangalore-Remote",
+        period: "Feb 2024 – Apr 2025",
+        domains: ["cloud", "data", "security"],
+        bullets: [
+          "Achieved a <strong>68% reduction in AWS cloud costs</strong> through query partitioning, replacing AWS Glue Crawlers with scheduled Lambda functions, and enforcing S3 lifecycle retention policies.",
+          "Oversaw end-to-end architecture for the <strong>Data Hub Experience</strong> initiative, enabling secure, interoperable patient data sharing across healthcare partners.",
+          "Migrated multiple microservices to <strong>Java 21 and Spring Boot 3</strong>, designing generic, non-blocking solutions for cloud compatibility.",
+          "Developed serverless integrations using <strong>AWS Lambda, S3, EventBridge, DynamoDB, RedShift, CodePipeline, CloudFormation, and API Gateway</strong> secured via <strong>OAuth2/Cognito</strong>.",
+          "Handled cross-functional requirements with partners and product teams, and mentored engineers via structured knowledge-transfer sessions."
+        ],
+        tech: ["AWS Lambda", "S3", "EventBridge", "DynamoDB", "RedShift", "Java 21", "Spring Boot 3", "OAuth 2.0", "Cognito", "CloudFormation", "CodePipeline"]
+      },
+      {
+        title: "Senior Software Engineer",
+        company: "Oracle",
+        location: "Bangalore",
+        period: "Oct 2020 – Feb 2024",
+        domains: ["cloud", "data", "security", "frontend"],
+        bullets: [
+          "Owned end-to-end architecture of the <strong>DMP adapter application</strong> and led design of end-to-end product integrations.",
+          "Designed the <strong>DMP-Activation backfill service</strong> and <strong>OCI Object Storage integration service</strong> for reliable legacy data migration and backup.",
+          "Built <strong>Apache Airflow DAGs</strong> integrating major platforms including <strong>Snapchat, Pinterest, Google, Amazon, Twitter, Facebook, and Trade Desk</strong> for scalable data ingestion.",
+          "Upgraded <strong>OAuth 1.0 to OAuth 2.0</strong> for the Twitter integration and completed the application's <strong>CSSAP security certification</strong>.",
+          "Established a CI-based testing environment with Mock Server and configured <strong>Grafana dashboards</strong> for data-driven operational review.",
+          "Conducted knowledge-transfer sessions on <strong>ReactJS, Redux Toolkit, and the BFF (Backend-for-Frontend) design pattern</strong>, leading UI and cloud-adapter enhancements."
+        ],
+        tech: ["OCI", "Airflow", "ReactJS", "Redux Toolkit", "BFF Pattern", "OAuth 2.0", "CSSAP", "Grafana", "Java", "Spring Boot"]
+      },
+      {
+        title: "Software Engineer-II",
+        company: "Dell Technology",
+        location: "Bangalore",
+        period: "Dec 2018 – Aug 2020",
+        domains: ["data", "security", "frontend"],
+        bullets: [
+          "Designed <strong>Kafka producer/consumer APIs</strong> with Spring Boot for real-time enterprise data streaming.",
+          "Built an <strong>HDFS-adapter and REST APIs</strong> for Elastic API querying and NAS Path directory access.",
+          "Implemented REST APIs with <strong>TDD/BDD methodologies</strong>, incorporating <strong>RBAC and SSO/PCF authentication</strong> for secure access control.",
+          "Designed System Reliability Engineering (SRE) tools to optimize operational efficiency and developed UI components using <strong>Angular, NodeJS, HTML5, and CSS</strong>.",
+          "Applied <strong>Fortify and Checkmarx</strong> for static code security analysis and vulnerability remediation."
+        ],
+        tech: ["Kafka", "Spring Boot", "Angular", "Node.js", "HDFS", "Elastic API", "RBAC", "SSO", "PCF", "Fortify", "CheckMarx"]
+      },
+      {
+        title: "Senior System Engineer",
+        company: "Infosys",
+        location: "Bangalore",
+        period: "Sept 2017 – Dec 2018",
+        domains: ["cloud", "security", "frontend"],
+        bullets: [
+          "Spearheaded migration of in-house projects to <strong>Azure cloud</strong> and legacy codebases to <strong>GitHub</strong>.",
+          "Elevated API management and security posture through <strong>Apigee integration</strong>.",
+          "Developed REST APIs with <strong>Spring Boot following BDD/TDD</strong>, achieving comprehensive e2e and JUnit test coverage.",
+          "Crafted UI components using <strong>Angular 4, ReactJS, NodeJS, HTML5, and CSS</strong>, and collaborated in an agile DevOps environment using <strong>Jenkins, Splunk, New Relic, and PCF</strong>."
+        ],
+        tech: ["Spring Boot", "ReactJS", "Angular", "Node.js", "Azure", "Apigee", "Jenkins", "Splunk", "New Relic", "JUnit"]
+      },
+      {
+        title: "Software Developer",
+        company: "Bluethink IT Consulting",
+        location: "Noida",
+        period: "July 2015 – July 2017",
+        domains: ["frontend", "data"],
+        bullets: [
+          "Designed and implemented RESTful APIs using <strong>Spring Boot</strong> and developed UI components using <strong>AngularJS, HTML5, and CSS</strong>.",
+          "Created low-level design (LLD) documents, including class and sequence diagrams.",
+          "Collaborated cross-functionally in Agile ceremonies, mentored junior engineers on best practices, and wrote comprehensive unit and functional tests managed via Git."
+        ],
+        tech: ["Java", "Spring Boot", "AngularJS", "HTML5", "CSS3", "REST APIs", "Git", "Agile/Scrum"]
+      }
+    ];
+
+    const SKILL_CATEGORIES = [
+      {
+        name: "AI & Agentic Tools",
+        items: ["LLM", "MCP (Model Context Protocol)", "RAG", "AI skills", "Agentic Workflow", "Spring AI", "LangChain", "LangGraph", "Codex", "Claude", "Cline"]
+      },
+      {
+        name: "Application Security & Governance",
+        items: ["OAuth 2.0", "Spring Security", "SSO & RBAC", "MFA", "Fortify (SAST)", "CheckMarx (SAST)", "OWASP", "Grype", "NVD", "Prisma Scan", "OSSA Maturity Bar", "CSSAP", "Apigee"]
+      },
+      {
+        name: "Languages & Frameworks",
+        items: ["Java (Java 8–21)", "Python", "Node.js", "TypeScript", "Spring Boot (v2/v3)", "Hibernate (JPA)", "JUnit", "Express", "Mockito", "Kafka"]
+      },
+      {
+        name: "Cloud & DevOps",
+        items: ["AWS (Lambda, S3, EventBridge, Glue)", "OCI (Gen2 OHDS, Object Storage)", "Azure", "Docker", "Kubernetes", "Jenkins", "CI/CD", "New Relic", "Splunk", "Grafana", "Airflow", "APM", "OpenTelemetry", "Postman"]
+      },
+      {
+        name: "Databases & Vector Search",
+        items: ["OpenSearch", "PGVector", "PostgreSQL", "DynamoDB", "RedShift", "MongoDB", "MySQL", "MariaDB"]
+      },
+      {
+        name: "Web & UI Technologies",
+        items: ["ReactJS", "Redux Toolkit", "Angular", "OJET", "HTML5", "CSS3", "BFF Design Pattern"]
+      },
+      {
+        name: "Tools & Engineering Practices",
+        items: ["IntelliJ IDEA", "VS Code", "Eclipse", "Git", "GitHub", "Bitbucket", "JIRA", "Gradle", "Maven", "Agile/Scrum", "SonarQube", "TDD/BDD"]
+      }
+    ];
+
+    const ARCHITECTURES = {
+      mcp: {
+        title: "Gen2 Semantic Search & MCP Healthcare Data Engine",
+        org: "Oracle Health Data Intelligence (Apr 2025 – Present)",
+        nodes: [
+          {
+            step: "STAGE 01",
+            title: "Provider Directory UI & APIs",
+            tech: "ReactJS · Spring Boot · ETL",
+            desc: "Architected and delivered modern Provider Directory UI and backend APIs while optimizing healthcare ETL pipelines for high-throughput patient and provider data ingestion.",
+            impact: "Unified cross-team architecture for AI-enabled healthcare data access."
+          },
+          {
+            step: "STAGE 02",
+            title: "MCP Service Layer",
+            tech: "Model Context Protocol · Gen2 OHDS",
+            desc: "Integrated Gen2 Oracle Health Data Services (OHDS) via standardized Model Context Protocol (MCP) services, providing structured context windows and tool interfaces for intelligent retrieval.",
+            impact: "Seamless context-aware orchestration across distributed clinical/provider stores."
+          },
+          {
+            step: "STAGE 03",
+            title: "Hybrid Semantic Engine",
+            tech: "OpenSearch · PGVector · RAG",
+            desc: "Designed and built Gen2 semantic search augmenting existing OpenSearch clusters with vector embeddings to resolve complex medical and provider directory queries.",
+            impact: "Significantly higher precision and context-aware recall over lexical search."
+          },
+          {
+            step: "STAGE 04",
+            title: "Intelligent Healthcare Insights",
+            tech: "LLM · Low-Latency API",
+            desc: "Delivers ranked, context-verified patient and provider search results back to clinical workflows with strict enterprise security governance.",
+            impact: "Production-grade Gen2 AI search across Oracle Health Data Intelligence."
+          }
+        ]
+      },
+      rca: {
+        title: "Autonomous Root-Cause Analysis (RCA) & Cloud FinOps Agents",
+        org: "Oracle Health Data Intelligence (Apr 2025 – Present)",
+        nodes: [
+          {
+            step: "STAGE 01",
+            title: "Telemetry & Alert Ingestion",
+            tech: "Splunk · New Relic · OpenTelemetry",
+            desc: "Captures real-time production incident alerts, distributed traces, APM metrics, and OCI resource utilization footprints.",
+            impact: "Automated signal correlation across microservices."
+          },
+          {
+            step: "STAGE 02",
+            title: "Autonomous RCA AI Agent",
+            tech: "LLM · Agentic Workflow · LangGraph",
+            desc: "Architected an AI agent that autonomously inspects stack traces, recent deployments, and log anomalies to synthesize root-cause hypotheses for on-call engineers.",
+            impact: "40–50% reduction in incident triage effort and turnaround time (TAT)."
+          },
+          {
+            step: "STAGE 03",
+            title: "Codex Dev & Migration Agent",
+            tech: "Codex · Automated Testing · CI/CD",
+            desc: "Embedded Codex AI agent across code analysis, debugging, unit testing, and multi-codebase technology-baseline migrations, plus reusable security compliance AI skills.",
+            impact: "35–40% engineering productivity gain & 30–35% faster security governance."
+          },
+          {
+            step: "STAGE 04",
+            title: "OCI FinOps Cleanup Agent",
+            tech: "OCI APIs · Autonomous Sweeper",
+            desc: "Deployed dedicated AI agents to continuously detect, verify, and clean up orphaned or abandoned Oracle Cloud Infrastructure (OCI) resources.",
+            impact: "Eliminated wasted cloud spend across engineering environments."
+          }
+        ]
+      },
+      aws: {
+        title: "Serverless Cloud FinOps & Interoperable Data Hub",
+        org: "NextGen Healthcare (Feb 2024 – Apr 2025)",
+        nodes: [
+          {
+            step: "STAGE 01",
+            title: "OAuth2 / Cognito API Gateway",
+            tech: "API Gateway · OAuth2 · Cognito",
+            desc: "Secured partner and patient data exchange endpoints under the Data Hub Experience initiative using AWS API Gateway and Cognito OAuth 2.0 flows.",
+            impact: "Zero-trust, interoperable healthcare data sharing."
+          },
+          {
+            step: "STAGE 02",
+            title: "EventBridge + Lambda Orchestration",
+            tech: "AWS Lambda · EventBridge · Java 21",
+            desc: "Replaced expensive continuous AWS Glue Crawlers with deterministic, scheduled AWS Lambda functions and non-blocking Java 21 / Spring Boot 3 microservices.",
+            impact: "Eliminated idle crawler compute overhead."
+          },
+          {
+            step: "STAGE 03",
+            title: "Partitioned Storage & Lifecycle",
+            tech: "Amazon S3 · Query Partitioning",
+            desc: "Re-architected data lake query partitioning and enforced automated S3 storage lifecycle retention policies across petabyte-scale healthcare datasets.",
+            impact: "Drastically reduced scanned data volume per query."
+          },
+          {
+            step: "STAGE 04",
+            title: "Analytics & 68% Cost Reduction",
+            tech: "DynamoDB · RedShift · CloudFormation",
+            desc: "Provisioned reproducible infrastructure via CloudFormation and CodePipeline feeding DynamoDB and RedShift analytics.",
+            impact: "Verified 68% reduction in AWS cloud costs."
+          }
+        ]
+      },
+      dmp: {
+        title: "Multi-Platform AdTech Ingestion & DMP Activation Architecture",
+        org: "Oracle (Oct 2020 – Feb 2024)",
+        nodes: [
+          {
+            step: "STAGE 01",
+            title: "7-Platform AdTech Connectors",
+            tech: "Snapchat · Pinterest · Google · Meta · X",
+            desc: "Engineered unified ingestion adapters connecting Snapchat, Pinterest, Google, Amazon, Twitter (upgraded OAuth 1.0 → OAuth 2.0), Facebook, and The Trade Desk.",
+            impact: "CSSAP security-certified multi-partner integration."
+          },
+          {
+            step: "STAGE 02",
+            title: "Apache Airflow DAG Engine",
+            tech: "Airflow · Scheduled Pipelines",
+            desc: "Built fault-tolerant Airflow DAGs orchestrating batch and incremental audience data ingestion, retry policies, and schema validation.",
+            impact: "High-reliability cross-platform data ingestion."
+          },
+          {
+            step: "STAGE 03",
+            title: "DMP Adapter & Backfill Service",
+            tech: "Java · Spring Boot · OCI Object Storage",
+            desc: "Owned end-to-end DMP adapter architecture, DMP-Activation backfill service, and OCI Object Storage integration for legacy migration and backup.",
+            impact: "Zero-data-loss legacy migration and activation."
+          },
+          {
+            step: "STAGE 04",
+            title: "BFF UI & Grafana Observability",
+            tech: "ReactJS · Redux Toolkit · Grafana",
+            desc: "Led UI/cloud-adapter enhancements using the Backend-for-Frontend (BFF) pattern and configured CI Mock Server testing + Grafana operational dashboards.",
+            impact: "Full-stack observability and rapid partner onboarding."
+          }
+        ]
+      }
+    };
+
+    const TERMINAL_COMMANDS = {
+      overview: `<span class="t-prompt">rahul@oracle-hdi:~$</span> <span class="t-cmd">./profile --summary --verified</span>
+<span class="t-muted">[INFO] Loading Principal Engineer profile (12+ years experience)...</span>
+• <span class="t-key">Role:</span>       Principal Member of Technical Staff @ Oracle (Health Data Intelligence)
+• <span class="t-key">Focus:</span>      Distributed Systems · Cloud (AWS/OCI) · Agentic AI &amp; MCP · Application Security
+• <span class="t-key">AppSec:</span>     <span class="t-val">OAuth 2.0, Spring Security, SSO/MFA, OWASP, SAST (Fortify/Checkmarx), Grype, Prisma, OSSA/CSSAP</span>
+• <span class="t-key">Key Win 1:</span>  <span class="t-val">68% AWS Cloud Cost Reduction</span> (Query partitioning, Lambda, S3 lifecycle)
+• <span class="t-key">Key Win 2:</span>  <span class="t-val">40–50% Faster Incident TAT</span> (Architected Autonomous RCA AI Agent)
+• <span class="t-key">Key Win 3:</span>  <span class="t-val">35–40% Dev Productivity Gain</span> (Embedded Codex AI across SDLC &amp; migrations)
+• <span class="t-key">Key Win 4:</span>  <span class="t-val">30–35% AppSec &amp; Governance Gain</span> (OSSA Maturity Bar + AI security automation)`,
+
+      mcp: `<span class="t-prompt">rahul@oracle-hdi:~$</span> <span class="t-cmd">./mcp-search --gen2 --inspect</span>
+<span class="t-muted">[MCP-SERVER] Connected to Gen2 OHDS Model Context Protocol service...</span>
+• <span class="t-key">Architecture:</span> Provider Directory UI + APIs + Optimized Healthcare ETL
+• <span class="t-key">Protocol:</span>     Model Context Protocol (MCP) bridging Gen2 OHDS patient &amp; provider data
+• <span class="t-key">Search Core:</span>  Gen2 Semantic Search layered over OpenSearch &amp; PGVector embeddings
+• <span class="t-key">Outcome:</span>      <span class="t-val">Context-aware, high-precision clinical &amp; provider retrieval in production</span>`,
+
+      rca: `<span class="t-prompt">rahul@oracle-hdi:~$</span> <span class="t-cmd">./rca-agent --triage --benchmark</span>
+<span class="t-muted">[AGENT-WORKFLOW] Executing Autonomous Root-Cause Analysis pipeline...</span>
+• <span class="t-key">Problem:</span>      High engineering effort &amp; turnaround time during on-call incident triage
+• <span class="t-key">Solution:</span>     Architected &amp; delivered an AI agent for automated root-cause analysis (RCA)
+• <span class="t-key">FinOps Bonus:</span> Deployed AI agents to detect &amp; clean up abandoned OCI cloud resources
+• <span class="t-key">Measured ROI:</span> <span class="t-val">40–50% reduction in on-call engineering effort &amp; turnaround time (TAT)</span>`,
+
+      finops: `<span class="t-prompt">rahul@oracle-hdi:~$</span> <span class="t-cmd">./aws-finops --save --verify</span>
+<span class="t-muted">[FINOPS-AUDIT] Inspecting NextGen Healthcare Data Hub cloud architecture...</span>
+• <span class="t-key">Optimization 1:</span> Partitioned analytical queries to minimize scanned S3 bytes
+• <span class="t-key">Optimization 2:</span> Replaced costly AWS Glue Crawlers with scheduled AWS Lambda functions
+• <span class="t-key">Optimization 3:</span> Enforced automated S3 lifecycle &amp; retention policies
+• <span class="t-key">Measured ROI:</span>   <span class="t-val">68% reduction in total AWS cloud costs</span>`,
+
+      security: `<span class="t-prompt">rahul@oracle-hdi:~$</span> <span class="t-cmd">./appsec-gov --audit --skills</span>
+<span class="t-muted">[APPSEC-GOV] Auditing Application Security &amp; Oracle OSSA / CSSAP posture...</span>
+• <span class="t-key">Auth &amp; IAM:</span>   OAuth 2.0 (1.0→2.0 migrations), Spring Security, SSO, MFA, RBAC, Cognito, Apigee
+• <span class="t-key">SAST &amp; SCA:</span>   Fortify, CheckMarx, OWASP, Grype, NVD, Prisma Scan &amp; 3rd-party library governance
+• <span class="t-key">Compliance:</span>   Oracle OSSA Maturity Bar alignment &amp; CSSAP security certification
+• <span class="t-key">AI AppSec:</span>    <span class="t-val">30–35% faster vulnerability analysis &amp; reporting via reusable AI skills</span>`
+    };
+
+    // 2. RENDER TERMINAL
+    const termOutput = document.getElementById("terminal-output");
+    function renderTerminal(cmdKey) {
+      termOutput.innerHTML = TERMINAL_COMMANDS[cmdKey] || TERMINAL_COMMANDS.overview;
+    }
+    renderTerminal("overview");
+
+    document.querySelectorAll(".term-chip").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".term-chip").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        renderTerminal(btn.dataset.cmd);
+      });
+    });
+
+    // 3. HERO ROLE TYPEWRITER
+    const ROLES_ROTATION = [
+      "Principal Member of Technical Staff @ Oracle (HDI)",
+      "Application Security & OSSA / CSSAP Governance Leader",
+      "Distributed Systems & Microservices Architect (Java 21 / Spring Boot 3)",
+      "Agentic AI, MCP & Semantic Search Pioneer",
+      "Cloud FinOps Leader (68% AWS Cost Reduction)"
+    ];
+    let roleIdx = 0;
+    const typewriterEl = document.getElementById("typewriter-text");
+    setInterval(() => {
+      roleIdx = (roleIdx + 1) % ROLES_ROTATION.length;
+      typewriterEl.style.opacity = 0;
+      setTimeout(() => {
+        typewriterEl.textContent = ROLES_ROTATION[roleIdx];
+        typewriterEl.style.opacity = 1;
+      }, 220);
+    }, 3600);
+
+    // 4. INTERACTIVE ARCHITECTURE BLUEPRINTS
+    let currentArchKey = "mcp";
+    const archNodesContainer = document.getElementById("arch-nodes-container");
+    const archStageTitle = document.getElementById("arch-stage-title");
+    const archStageOrg = document.getElementById("arch-stage-org");
+    const inspStep = document.getElementById("insp-step");
+    const inspTitle = document.getElementById("insp-title");
+    const inspDesc = document.getElementById("insp-desc");
+    const inspImpact = document.getElementById("insp-impact");
+
+    function selectArchNode(archKey, nodeIdx) {
+      const arch = ARCHITECTURES[archKey];
+      const node = arch.nodes[nodeIdx];
+      document.querySelectorAll(".arch-node").forEach((el, i) => {
+        el.classList.toggle("selected", i === nodeIdx);
+      });
+      inspStep.textContent = `${node.step} · ${node.tech}`;
+      inspTitle.textContent = node.title;
+      inspDesc.textContent = node.desc;
+      inspImpact.textContent = `✓ ${node.impact}`;
+    }
+
+    function renderArchitecture(archKey) {
+      currentArchKey = archKey;
+      const arch = ARCHITECTURES[archKey];
+      archStageTitle.textContent = arch.title;
+      archStageOrg.textContent = arch.org;
+      archNodesContainer.innerHTML = arch.nodes.map((n, idx) => `
+        <div class="arch-node ${idx === 0 ? 'selected' : ''}" data-idx="${idx}">
+          <div class="arch-node-step">${n.step}</div>
+          <div class="arch-node-title">${n.title}</div>
+          <div class="arch-node-tech">${n.tech}</div>
+        </div>
+      `).join("");
+
+      archNodesContainer.querySelectorAll(".arch-node").forEach(nodeEl => {
+        nodeEl.addEventListener("click", () => {
+          selectArchNode(archKey, parseInt(nodeEl.dataset.idx, 10));
+        });
+      });
+      selectArchNode(archKey, 0);
+    }
+
+    document.querySelectorAll(".arch-tab").forEach(tab => {
+      tab.addEventListener("click", () => {
+        document.querySelectorAll(".arch-tab").forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+        renderArchitecture(tab.dataset.arch);
+      });
+    });
+    renderArchitecture("mcp");
+
+    // 5. ROI & IMPACT SIMULATOR
+    const simCloud = document.getElementById("sim-cloud");
+    const simTeam = document.getElementById("sim-team");
+    const simInc = document.getElementById("sim-inc");
+
+    function updateSimulator() {
+      const cloudMo = parseInt(simCloud.value, 10);
+      const teamSize = parseInt(simTeam.value, 10);
+      const incHours = parseInt(simInc.value, 10);
+
+      document.getElementById("sim-cloud-val").textContent = `$${cloudMo.toLocaleString()} / mo`;
+      document.getElementById("sim-team-val").textContent = `${teamSize} Engineers`;
+      document.getElementById("sim-inc-val").textContent = `${incHours} hrs / mo`;
+
+      const annualCloudSaved = Math.round(cloudMo * 12 * 0.68);
+      const effectiveFteGain = (teamSize * 0.375).toFixed(1);
+      const triageSaved = Math.round(incHours * 0.45);
+
+      document.getElementById("out-cloud-save").textContent = `$${annualCloudSaved.toLocaleString()}`;
+      document.getElementById("out-dev-hours").textContent = `+${effectiveFteGain} FTE`;
+      document.getElementById("out-tat-hours").textContent = `${triageSaved} hrs/mo`;
+    }
+    [simCloud, simTeam, simInc].forEach(el => el.addEventListener("input", updateSimulator));
+    updateSimulator();
+
+    // 6. RENDER EXPERIENCE TIMELINE
+    const timelineList = document.getElementById("timeline-list");
+    let activeTechHighlight = null;
+
+    function renderTimeline(domainFilter = "all") {
+      const filtered = domainFilter === "all"
+        ? ROLES
+        : ROLES.filter(r => r.domains.includes(domainFilter));
+
+      timelineList.innerHTML = filtered.map(r => `
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-top">
+            <div>
+              <h3 class="role-title">${r.title}</h3>
+              <div class="role-company">${r.company} · ${r.location}</div>
+            </div>
+            <span class="role-period">${r.period}</span>
+          </div>
+          <ul class="role-bullets">
+            ${r.bullets.map(b => `<li>${b}</li>`).join("")}
+          </ul>
+          <div class="tech-pills">
+            ${r.tech.map(t => `<span class="tech-pill ${activeTechHighlight && t.toLowerCase().includes(activeTechHighlight.toLowerCase()) ? 'highlighted' : ''}" onclick="highlightTech('${t}')">${t}</span>`).join("")}
+          </div>
+        </article>
+      `).join("");
+    }
+    renderTimeline("all");
+
+    document.querySelectorAll("#exp-filters .filter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll("#exp-filters .filter-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        renderTimeline(btn.dataset.filter);
+      });
+    });
+
+    // 7. RENDER CORE TECHNOLOGIES MATRIX
+    const skillsGrid = document.getElementById("skills-grid");
+    const skillSearch = document.getElementById("skill-search");
+
+    function renderSkills(query = "") {
+      const q = query.trim().toLowerCase();
+      skillsGrid.innerHTML = SKILL_CATEGORIES.map(cat => {
+        const matchedItems = cat.items.filter(item => !q || item.toLowerCase().includes(q) || cat.name.toLowerCase().includes(q));
+        if (matchedItems.length === 0) return "";
+        return `
+          <div class="skill-cat-card">
+            <div class="skill-cat-header">
+              <span class="skill-cat-name">${cat.name}</span>
+              <span class="skill-cat-count">${matchedItems.length} skills</span>
+            </div>
+            <div class="tech-pills">
+              ${matchedItems.map(item => `
+                <span class="tech-pill ${q && item.toLowerCase().includes(q) ? 'highlighted' : ''}" onclick="highlightTech('${item.split(' ')[0]}')">${item}</span>
+              `).join("")}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+    renderSkills();
+
+    skillSearch.addEventListener("input", e => renderSkills(e.target.value));
+
+    window.highlightTech = function(techName) {
+      activeTechHighlight = techName;
+      skillSearch.value = techName;
+      renderSkills(techName);
+      renderTimeline("all");
+      showToast(`Highlighted "${techName}" across Experience & Tech Stack`);
+    };
+
+    // 8. LIVE GOOGLE FORM ("Get In Touch") SUBMISSION HANDLER
+    const topicPills = document.querySelectorAll("#topic-pills .topic-pill");
+    const cfTopicInput = document.getElementById("cf-topic");
+    const selectedTopicDisplay = document.getElementById("selected-topic-display");
+
+    topicPills.forEach(pill => {
+      pill.addEventListener("click", () => {
+        topicPills.forEach(p => p.classList.remove("active"));
+        pill.classList.add("active");
+        cfTopicInput.value = pill.dataset.topic;
+        selectedTopicDisplay.textContent = pill.dataset.topic;
+      });
+    });
+
+    const QUICK_TEMPLATES = {
+      leadership: "Hi Rahul, we are hiring a Principal Engineer / Architect to lead our distributed cloud, application security, and AI platform initiatives. Your experience at Oracle HDI and 68% AWS FinOps cost reduction stood out—would love to schedule an architecture conversation.",
+      ai: "Hi Rahul, we are designing an enterprise Model Context Protocol (MCP) & semantic search workflow and would love to discuss your Gen2 OHDS & autonomous RCA agent architecture.",
+      finops: "Hi Rahul, we're looking to strengthen our Application Security governance (OAuth2, SAST/SCA, OSSA) and optimize our AWS/OCI data pipelines. Would love to connect."
+    };
+
+    const cfMessage = document.getElementById("cf-message");
+    const charCount = document.getElementById("char-count");
+
+    cfMessage.addEventListener("input", () => {
+      charCount.textContent = `${cfMessage.value.length} / 1500 chars`;
+    });
+
+    document.querySelectorAll(".tpl-chip").forEach(chip => {
+      chip.addEventListener("click", () => {
+        cfMessage.value = QUICK_TEMPLATES[chip.dataset.tpl] || "";
+        charCount.textContent = `${cfMessage.value.length} / 1500 chars`;
+        cfMessage.focus();
+      });
+    });
+
+    let sessionSubmissions = [];
+    const contactForm = document.getElementById("portfolio-contact-form");
+    const submitBtn = document.getElementById("cf-submit-btn");
+    const submitText = document.getElementById("cf-submit-text");
+    const successBanner = document.getElementById("cf-success-banner");
+
+    contactForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (document.getElementById("form-honeypot").value) return;
+
+      const payload = {
+        topic: document.getElementById("cf-topic").value.trim(),
+        name: document.getElementById("cf-name").value.trim(),
+        email: document.getElementById("cf-email").value.trim(),
+        organization: document.getElementById("cf-org").value.trim(),
+        phone: document.getElementById("cf-phone").value.trim(),
+        message: document.getElementById("cf-message").value.trim()
+      };
+
+      submitBtn.disabled = true;
+      submitText.textContent = "⏳ Sending to Google Form...";
+
+      const cfg = window.GOOGLE_FORM_CONFIG;
+      const prefillParams = new URLSearchParams({
+        usp: "pp_url",
+        [cfg.entries.name]: payload.name,
+        [cfg.entries.organization]: payload.organization,
+        [cfg.entries.topic]: payload.topic,
+        [cfg.entries.email]: payload.email,
+        [cfg.entries.phone]: payload.phone || "",
+        [cfg.entries.message]: payload.message
+      });
+      const prefillUrl = cfg.actionUrl.replace(/\/formResponse$/, "/viewform") + "?" + prefillParams.toString();
+
+      // Submit via native form POST into hidden_gform_iframe (works reliably from both file:// and https://*.github.io)
+      await new Promise((resolve) => {
+        const iframe = document.getElementById("hidden_gform_iframe");
+        let done = false;
+        const finish = () => {
+          if (!done) {
+            done = true;
+            resolve();
+          }
+        };
+        iframe.onload = finish;
+        setTimeout(finish, 1200);
+        HTMLFormElement.prototype.submit.call(contactForm);
+      });
+
+      submitBtn.disabled = false;
+      submitText.textContent = "🚀 Send Another Message";
+
+      sessionSubmissions.unshift({
+        name: payload.name,
+        org: payload.organization,
+        topic: payload.topic,
+        time: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+      });
+
+      document.getElementById("submission-counter-badge").textContent = `${sessionSubmissions.length} sent`;
+      document.getElementById("recent-submissions-list").innerHTML = sessionSubmissions.slice(0, 3).map(s =>
+        `<div>✓ <strong>[${s.time}]</strong> ${s.name} (${s.org}) — <em>${s.topic}</em></div>`
+      ).join("");
+
+      successBanner.className = "submission-banner show";
+      successBanner.innerHTML = `
+        <strong>✓ Thanks for submitting your contact info!</strong><br/>
+        Thank you, <strong>${payload.name}</strong>! Your inquiry under <em>${payload.topic}</em> has been recorded in Rahul's Google Form &amp; Sheet.
+      `;
+
+      contactForm.reset();
+      cfTopicInput.value = "Principal / Architecture Role";
+      selectedTopicDisplay.textContent = "Principal / Architecture Role";
+      topicPills.forEach((p, idx) => p.classList.toggle("active", idx === 0));
+      charCount.textContent = "0 / 1500 chars";
+      showToast("Response recorded in Google Form!");
+    });
+
+    // 9. THEME TOGGLE & COMMAND PALETTE
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeIcon = document.getElementById("theme-icon");
+    themeToggle.addEventListener("click", () => {
+      const htmlEl = document.documentElement;
+      const next = htmlEl.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      htmlEl.setAttribute("data-theme", next);
+      themeIcon.textContent = next === "dark" ? "☀️" : "🌙";
+    });
+
+    window.openModal = function(id) {
+      document.getElementById(id).classList.add("open");
+      if (id === "cmd-modal") {
+        setTimeout(() => document.getElementById("cmd-input").focus(), 60);
+      }
+    };
+    window.closeModal = function(id) {
+      document.getElementById(id).classList.remove("open");
+    };
+    window.jumpTo = function(hash) {
+      closeModal("cmd-modal");
+      window.location.hash = hash;
+    };
+
+    document.getElementById("open-cmd-btn").addEventListener("click", () => openModal("cmd-modal"));
+
+    window.addEventListener("keydown", e => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        openModal("cmd-modal");
+      } else if (e.key === "Escape") {
+        closeModal("cmd-modal");
+      }
+    });
+
+    document.getElementById("cmd-input").addEventListener("input", e => {
+      const q = e.target.value.toLowerCase();
+      document.querySelectorAll("#cmd-list .cmd-item").forEach(li => {
+        li.style.display = li.textContent.toLowerCase().includes(q) ? "flex" : "none";
+      });
+    });
+
+    window.showToast = function(msg) {
+      const t = document.getElementById("toast");
+      t.textContent = msg;
+      t.classList.add("show");
+      setTimeout(() => t.classList.remove("show"), 2800);
+    };
+
+    // Scroll progress bar
+    window.addEventListener("scroll", () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+      document.getElementById("scroll-progress").style.width = scrolled + "%";
+    });
+
+    // 10. ANIMATED DISTRIBUTED NODE NETWORK CANVAS (PAUSES CLEANLY ON PRINT)
+    const canvas = document.getElementById("network-canvas");
+    const ctx = canvas.getContext("2d");
+    let nodes = [];
+    let animFrameId = null;
+    let isPrinting = false;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+
+    for (let i = 0; i < 38; i++) {
+      nodes.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.45,
+        vy: (Math.random() - 0.5) * 0.45,
+        r: Math.random() * 2 + 1.2
+      });
+    }
+
+    function drawNetwork() {
+      if (isPrinting) return;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < nodes.length; i++) {
+        const n = nodes[i];
+        n.x += n.vx;
+        n.y += n.vy;
+        if (n.x < 0 || n.x > canvas.width) n.vx *= -1;
+        if (n.y < 0 || n.y > canvas.height) n.vy *= -1;
+
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(6, 182, 212, 0.55)";
+        ctx.fill();
+
+        for (let j = i + 1; j < nodes.length; j++) {
+          const m = nodes[j];
+          const dx = n.x - m.x;
+          const dy = n.y - m.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 145) {
+            ctx.beginPath();
+            ctx.moveTo(n.x, n.y);
+            ctx.lineTo(m.x, m.y);
+            ctx.strokeStyle = `rgba(99, 102, 241, ${0.18 * (1 - dist / 145)})`;
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+        }
+      }
+      animFrameId = requestAnimationFrame(drawNetwork);
+    }
+    drawNetwork();
+
+    window.addEventListener("beforeprint", () => {
+      isPrinting = true;
+      if (animFrameId) cancelAnimationFrame(animFrameId);
+    });
+    window.addEventListener("afterprint", () => {
+      isPrinting = false;
+      drawNetwork();
+    });
+  </script>
+</body>
+</html>
